@@ -1,0 +1,86 @@
+nav {
+  background-color: transparent;
+  height: 5rem;
+  display: flex;
+}
+nav li {
+  text-decoration: none;
+  list-style-type: none;
+  text-transform: capitalize;
+  margin: 20px 15px;
+}
+.HomePageBackGround {
+  background-image: url("/src/Components/Navbar/LNMIITHome.jpg");
+  height: 70vh;
+  width: 100%;
+  opacity: 1;
+}
+.DepartmentsBackGround {
+  background-image: url("/src/Components/Navbar/DepartmentBackGround.jpeg");
+  height: 70vh;
+  width: 100%;
+  opacity: 1;
+}
+.CampusLifeBackGround {
+  background-image: url("/src/Components/Navbar/CampusLifeBackGround.png");
+  height: 70vh;
+  width: 100%;
+  opacity: 1;
+}
+.CentreOFRoboticsBackGround {
+  background-image: url("/src/Components/Navbar/CentreOfRoboticsBackGround.jpg");
+  height: 70vh;
+  width: 100%;
+  opacity: 1;
+}
+.CentreOfExcellenceBackGround {
+  background-image: url("/src/Components/Navbar/CentreOfExcellenceBackGround.jpeg");
+  height: 70vh;
+  width: 100%;
+  opacity: 1;
+  /* background-repeat: no-repeat; */
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.LNMIITWhiteLogo {
+  display: none;
+}
+.LNMIITBlackLogo {
+  width: 10rem;
+  padding: 10px;
+}
+.NavbarHeading {
+  display: inline-block;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.NavbarHeading:hover {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.NavbarHeading::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.NavbarHeading:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: red;
+}
