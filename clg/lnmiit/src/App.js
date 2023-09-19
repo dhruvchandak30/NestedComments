@@ -10,9 +10,9 @@ import CentreofRobotics from "./Components/CentreofRobotics/CentreofRobotics";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Router>
+    <Router>
+      <div className="App">
+        <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/campuslife" element={<CampusLife />} />
@@ -20,9 +20,9 @@ function App() {
           <Route path="/centreofrobotics" element={<CentreofRobotics />} />
           <Route path="/centreofexcellence" element={<CentreofExcellence />} />
         </Routes>
-      </Router>
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

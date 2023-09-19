@@ -1,7 +1,7 @@
 import React from "react";
 
 function CampusLife() {
-  return <div>CampusLife</div>;
+  return <div>Campuss Life</div>;
 }
 
 export default CampusLife;
