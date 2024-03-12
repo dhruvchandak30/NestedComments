@@ -9,9 +9,11 @@ const FetchComments = () => {
   const [warning, setWarning] = useState("");
   const fetchCommentsHandler = () => {
     setLoader(!loading);
-    fetch("https://nestedcomments-m6yj.onrender.com/api/v1/getComments")
+    fetch("https://nestedcomments-1.onrender.com/api/v1/getComments")
       .then(function (response) {
         if (!response.ok) {
+          setWarning("Could Not connect to Database");
+          setLoader(false);
           throw new Error("Network response was not ok");
         }
         return response.json();
