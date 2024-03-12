@@ -9,7 +9,7 @@ const FetchComments = () => {
   const [warning, setWarning] = useState("");
   const fetchCommentsHandler = () => {
     setLoader(!loading);
-    fetch("http://localhost:3001/api/v1/getComments")
+    fetch("https://nestedcomments-m6yj.onrender.com/api/v1/getComments")
       .then(function (response) {
         if (!response.ok) {
           throw new Error("Network response was not ok");
